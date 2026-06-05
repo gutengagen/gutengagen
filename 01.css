@@ -1,0 +1,273 @@
+/* Подключаем Gilroy Light (обычное начертание) */
+@font-face {
+  font-family: "Gilroy"; /* Имя шрифта, которое будешь использовать */
+  src: url("fonts/Gilroy-Light.otf") format("opentype"); /* Путь к файлу */
+  font-weight: 300; /* Светлое начертание = Light */
+  font-style: normal; /* Обычный (не курсив) */
+  font-display: swap; /* Оптимизация загрузки */
+}
+
+/* Подключаем Gilroy ExtraBold (жирное начертание) */
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Очень жирный */
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family:
+    "Gilroy", sans-serif; /* Основной шрифт Gilroy, если не загрузится - любой другой без засечек */
+  font-weight: 300; /* По умолчанию используем Light версию */
+  color: #333;
+  background-color: rgba(19, 19, 19, 1);
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+.bold-text {
+  font-weight: 800; /* Здесь автоматически применится ExtraBold */
+}
+
+.text-bold {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button__01 {
+  background-color: rgba(56, 5, 242, 1);
+  color: white;
+  border: 1px solid rgba(56, 5, 242, 1);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.button__01:hover {
+  background-color: aliceblue;
+  color: rgba(56, 5, 242, 1);
+  transition: all 0.3s ease;
+}
+
+.button__01:active {
+  color: black;
+  box-shadow: 0 0 20px rgba(56, 5, 242, 1);
+}
+
+/*
+
+
+
+
+
+
+cektor__01 */
+.cektor__01 {
+  height: 1067px;
+  margin-top: 30px;
+}
+
+.cektor__01 header {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+}
+
+.cektor__01 header .header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 37px;
+  width: 147px;
+}
+
+.cektor__01 header .header__logo h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  margin-left: 6px;
+  color: aliceblue;
+}
+
+.cektor__01 header nav {
+  height: 19px;
+  width: 488px;
+  margin-left: 152px;
+}
+
+.cektor__01 header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cektor__01 header nav ul li a {
+  cursor: pointer;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.cektor__01 header nav ul li a:hover {
+  color: antiquewhite;
+}
+
+.cektor__01 header .info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 39px;
+  width: 400px;
+}
+
+.cektor__01 header .info img {
+  width: 25px;
+  height: 22px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.cektor__01 header .info h1 {
+  height: 22px;
+  width: 120px;
+  margin: 0;
+  margin-left: 16px;
+  color: aliceblue;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cektor__01 header .info button {
+  height: 39px;
+  width: 160px;
+  margin-left: 30px;
+  border: 0;
+  border-radius: 20px;
+  background-color: rgba(56, 5, 242, 1);
+  color: black;
+  font-size: 16px;
+  font-style: bold;
+  cursor: pointer;
+}
+
+.cektor__01 header .info button:hover {
+  box-shadow: 0 0 20px rgba(56, 5, 242, 1);
+  color: aliceblue;
+  transition: all 0.3s ease;
+}
+
+.cektor__01 header .info button:active {
+  box-shadow: 0 0 0px rgba(56, 5, 242, 1);
+  transition: all 0.3s ease;
+}
+
+.cektor__01 .block {
+  height: 992px;
+  width: 100%;
+  margin-top: 36px;
+}
+
+.cektor__01 .block .pod__block__1 {
+  width: 100%;
+  height: 493px;
+  background-color: aliceblue;
+  border-radius: 50px;
+  background-image: url(image/1cektor/photo4.png);
+  background-size: cover; /* или contain */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cektor__01 .block .pod__block__1 .blocks {
+  padding: 40px 40px 0 40px;
+}
+
+.cektor__01 .block .pod__block__1 .blocks {
+  height: 186px;
+  width: 1033px;
+}
+
+.cektor__01 .block .pod__block__1 .blocks .txt h1 {
+  height: 122px;
+  width: 1033px;
+  color: black;
+  font-size: 64px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+.blue {
+  font-weight: 800;
+  color: rgba(56, 5, 242, 1);
+}
+
+.cektor__01 .block .pod__block__1 .blocks p {
+  margin: 0;
+  margin-top: 20px;
+  height: 44px;
+  width: 655px;
+  font-weight: 400;
+}
+
+.cektor__01 .block .pod__block__1 .blocks button {
+  height: 68px;
+  width: 280px;
+  margin-top: 74px;
+}
+
+.cektor__01 .block .pod__block__2 {
+  display: flex;
+  width: 100%;
+  height: 485px;
+  margin-top: 14px;
+}
+
+.cektor__01 .block .pod__block__2 .blocks__01 {
+  height: 100%;
+  width: 427px;
+}
+
+.cektor__01 .block .pod__block__2 .blocks__01 .blocks__para {
+  width: 100%;
+  height: 282px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.cektor__01 .block .pod__block__2 .blocks__01 .blocks__20 {
+  width: 100%;
+  height: 189px;
+  margin-top: 14px;
+  background-color: rgba(56, 5, 242, 1);
+  border-radius: 50px;
+}
+
+.cektor__01 .block .pod__block__2 .blocks__02 {
+  height: 100%;
+  width: 899px;
+  margin-left: 14px;
+  border-radius: 55px;
+  background-image: url(image/1cektor/photo5.jpg);
+  background-size: cover; /* или contain */
+  background-position: center;
+  background-repeat: no-repeat;
+}
